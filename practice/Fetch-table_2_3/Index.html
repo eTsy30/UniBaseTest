@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="search-container_icon">
+      <label for="searchInput"> Поиск постов</label>
+      <input type="text" id="searchInput" placeholder="Поиск постов..." />
+    </div>
+
+    <table id="postTable" border="1">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">ID</th>
+          <th onclick="sortTable(1)">UserID</th>
+          <th onclick="sortTable(2)">Title</th>
+          <th onclick="sortTable(3)">Body</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <script src="./script.js"></script>
+  </body>
+</html>

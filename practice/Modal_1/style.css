@@ -1,0 +1,220 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #0c1014;
+  box-sizing: border-box;
+  overflow: auto;
+}
+input {
+  outline: none;
+}
+select {
+  outline: none;
+}
+* {
+  box-sizing: border-box;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.modal-form_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  gap: 32px;
+  align-items: center;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.form-input-side {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 53px 97px;
+  overflow: auto;
+  max-height: 90vh;
+}
+
+.modal-title {
+  margin: 0px;
+  color: #0c1014;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 34px;
+  margin-bottom: 35px;
+}
+
+.modal-button {
+  width: 100%;
+  height: 48px;
+  background-color: #e5266e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.modal-button:hover {
+  background-color: #fff;
+  color: #e5266e;
+  border: 1px solid #e5266e;
+}
+.modal-button:disabled {
+  background-color: #6f6e6e;
+  color: white;
+}
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d6dade;
+  width: 100%;
+  padding: 6px 16px;
+}
+.modal-input {
+  border: none;
+  width: 100%;
+  color: #0c1014;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.form-input-label {
+  color: #6a6e72;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.form-input-span {
+  color: #d90000;
+}
+.form-select-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d6dade;
+  width: 100%;
+  padding: 7px 8px 9px 16px;
+}
+.form-select {
+  height: 100%;
+  color: #0c1014;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border: none;
+}
+.form-input-image {
+  width: 18px;
+  height: 18px;
+}
+.form-input-container_icon {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #d6dade;
+  width: 100%;
+  height: 56px;
+
+  padding: 6px 16px;
+  justify-content: center;
+  align-items: center;
+}
+.modal-button-exit {
+  color: #0848c0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin: 0px;
+}
+.modal-button-exit:hover {
+  border: 1px solid #0848c0;
+}
+.form-image-side {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  background: url(https://yt3.googleusercontent.com/ytc/AOPolaR7Okd2LhSOKGsNnwMn3-FIbU4PzJtxEpT4ieEJ=s900-c-k-c0x00ffffff-no-rj)
+    no-repeat rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1193px) {
+  .form-input-side {
+    width: 100%;
+  }
+}
+.form-image-side::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: 1;
+}
+
+.form-image-side:hover::before {
+  opacity: 1;
+}
+
+.avatar-hover__container {
+  position: relative;
+  z-index: 2;
+  display: none;
+}
+
+.form-image-side:hover .avatar-hover__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar-text {
+  color: #fff;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+}
+
+.avatar-close {
+  margin-left: auto;
+}

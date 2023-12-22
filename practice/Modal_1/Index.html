@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button class="modal-button" id="open-modal">Open modal</button>
+
+    <div id="modal" onclick="{closeModal(event)}" class="modal">
+      <div class="modal-content">
+        <h1 class="modal-title">Стать партнёром проекта</h1>
+        <form class="modal-form" action="/submit">
+          <div class="modal-form_container">
+            <div class="form-input-side">
+              <div class="form-input-container">
+                <label class="form-input-label" for="organisation"
+                  ><span class="form-input-span">✱</span> Название организации
+                </label>
+                <input
+                  id="organisation"
+                  class="modal-input"
+                  type="text"
+                  placeholder="Название организации"
+                  required
+                />
+              </div>
+              <div class="form-input-container">
+                <label class="form-input-label" for="phone"
+                  ><span class="form-input-span">✱</span> Телефон
+                </label>
+                <input
+                  id="phone"
+                  class="modal-input"
+                  type="tel"
+                  placeholder="Телефон"
+                  required
+                />
+              </div>
+              <div class="form-input-container">
+                <label class="form-input-label" for="email"
+                  ><span class="form-input-span">✱</span> E-mail
+                </label>
+                <input
+                  id="email"
+                  class="modal-input"
+                  placeholder="E-mail"
+                  type="email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-image-side" onclick="{alert('в разработке...')}">
+              <div class="avatar-hover__container">
+                <img src="../assets/Vector.svg" alt="" />
+                <p class="avatar-text">Выберите Файл</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-select-container">
+            <label class="form-input-label" for="form-select"
+              ><span class="form-input-span">✱</span> Направление
+            </label>
+            <select name="select" id="form-select" class="form-select" required>
+              <option value="">Выберите направление</option>
+              <option value="dog">Экология</option>
+              <option value="cat">Финансы</option>
+              <option value="hamster">Медицина</option>
+            </select>
+          </div>
+          <div class="form-input-container_icon">
+            <input
+              class="modal-input"
+              placeholder="Добавьте социальную сеть"
+              type="text"
+            />
+            <img
+              class="form-input-image"
+              src="../assets/global.png"
+              alt="global"
+            />
+          </div>
+          <div class="form-input-container_icon">
+            <input
+              class="modal-input"
+              type="text"
+              placeholder="Добавьте социальную сеть"
+            />
+            <img class="form-input-image" src="../assets/vk.png" alt="global" />
+          </div>
+          <div class="form-input-container_icon">
+            <input
+              class="modal-input"
+              type="text"
+              placeholder="Добавьте социальную сеть"
+            />
+            <img
+              class="form-input-image"
+              src="../assets/odnoklassniki.png"
+              alt="global"
+            />
+          </div>
+          <div class="form-input-container_icon">
+            <input
+              class="modal-input"
+              type="text"
+              placeholder="Добавьте социальную сеть"
+            />
+            <img
+              class="form-input-image"
+              src="../assets/Icon.png"
+              alt="global"
+            />
+          </div>
+
+          <div class="form-input-container_icon">
+            <input
+              class="modal-input"
+              type="text"
+              placeholder="Добавьте социальную сеть"
+            />
+            <img
+              class="form-input-image"
+              src="../assets/Instagram.png"
+              alt="global"
+            />
+          </div>
+          <div class="form-input-container_icon">
+            <input
+              class="modal-input"
+              type="text"
+              placeholder="Добавьте социальную сеть"
+            />
+            <img
+              class="form-input-image"
+              src="../assets/youtube 2.png"
+              alt="global"
+            />
+          </div>
+          <div class="form-input-container_icon">
+            <input
+              class="modal-input"
+              type="text"
+              placeholder="Добавьте социальную сеть"
+            />
+          </div>
+          <button type="submit" class="modal-button">
+            Стать партнёром проекта
+          </button>
+          <p class="modal-button-exit" onclick="{closeModal(event)}">
+            Отменить
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+body {
+  overflow-x: hidden;
+}
+#postTable {
+  border: none;
+}
+#postTable th,
+#postTable td {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+#postTable th {
+  font-size: 16px;
+  font-weight: bold;
+}
+#postTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#postTable th,
+#postTable td {
+  text-align: left; /* Or center, right */
+}
+#postTable tr:hover {
+  background-color: #e0e0e0;
+}
+@media (max-width: 768px) {
+  #postTable {
+    margin: 15px;
+    width: 100%;
+  }
+}
+.search-container_icon {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d6dade;
+
+  padding: 6px 16px;
+  margin: 15px;
+}
+#searchInput {
+  border: none;
+  width: 100%;
+  color: #0c1014;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  outline: none;
+}
