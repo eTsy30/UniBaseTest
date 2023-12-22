@@ -40,8 +40,5 @@ script.js: JavaScript файл для запроса данных и созда�
 Использована методология БЭМ для стилей.
 
 Link:
-[ubitable.netlify.app
-](https://ubitable.netlify.app/)https://ubitable.netlify.app/
-[[ubitable.netlify.app
-](https://ubitable.netlify.app/)https://loquacious-blancmange-0b0598.netlify.app/
-](https://ubimodal.netlify.app/)https://ubimodal.netlify.app/
+table: https://ubitable.netlify.app/
+modal: https://ubimodal.netlify.app/
