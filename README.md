@@ -42,3 +42,6 @@ script.js: JavaScript файл для запроса данных и созда�
 Link:
 [ubitable.netlify.app
 ](https://ubitable.netlify.app/)https://ubitable.netlify.app/
+[[ubitable.netlify.app
+](https://ubitable.netlify.app/)https://loquacious-blancmange-0b0598.netlify.app/
+](https://ubimodal.netlify.app/)https://ubimodal.netlify.app/
