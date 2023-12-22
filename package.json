@@ -1,0 +1,11 @@
+{
+  "name": "unibasetest",
+  "version": "1.0.0",
+  "description": "# Тестовое задание на позицию Junior Frontend Developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
