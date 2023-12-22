@@ -43,6 +43,7 @@
                   type="text"
                   placeholder="Название организации"
                   required
+                  name="organisation"
                 />
               </div>
               <div class="form-input-container">
@@ -51,10 +52,12 @@
                 </label>
                 <input
                   id="phone"
+                  name="phone"
                   class="modal-input"
                   type="tel"
                   placeholder="Телефон"
                   required
+                  maxlength="16"
                 />
               </div>
               <div class="form-input-container">
@@ -66,14 +69,32 @@
                   class="modal-input"
                   placeholder="E-mail"
                   type="email"
+                  name="email"
                   required
                 />
               </div>
             </div>
-            <div class="form-image-side" onclick="{alert('в разработке...')}">
-              <div class="avatar-hover__container">
-                <img src="../assets/Vector.svg" alt="" />
-                <p class="avatar-text">Выберите Файл</p>
+            <div class="form-image-container">
+              <a type="button" id="avatar-close_button">
+                <img
+                  class="avatar-image__close"
+                  src="./assets/close.svg"
+                  alt="close"
+                />
+              </a>
+
+              <div class="form-image-side" id="formImageSide">
+                <div class="avatar-hover__container">
+                  <img src="./assets/Vector.svg" alt="" />
+                  <p class="avatar-hover__text">Выберите файл</p>
+                  <input
+                    type="file"
+                    id="avatarInput"
+                    class="avatar-text"
+                    accept="image/*"
+                    hidden
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -90,78 +111,81 @@
           </div>
           <div class="form-input-container_icon">
             <input
-              class="modal-input"
+              class="modal-input input-sotial"
               placeholder="Добавьте социальную сеть"
               type="text"
             />
             <img
               class="form-input-image"
-              src="../assets/global.png"
+              src="./assets/global.png"
               alt="global"
             />
           </div>
           <div class="form-input-container_icon">
             <input
-              class="modal-input"
+              pattern="/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/"
+              class="modal-input input-sotial"
               type="text"
               placeholder="Добавьте социальную сеть"
             />
-            <img class="form-input-image" src="../assets/vk.png" alt="global" />
+            <img class="form-input-image" src="./assets/vk.png" alt="global" />
           </div>
           <div class="form-input-container_icon">
             <input
-              class="modal-input"
+              class="modal-input input-sotial"
               type="text"
               placeholder="Добавьте социальную сеть"
             />
             <img
               class="form-input-image"
-              src="../assets/odnoklassniki.png"
+              src="./assets/odnoklassniki.png"
               alt="global"
             />
           </div>
           <div class="form-input-container_icon">
             <input
-              class="modal-input"
+              class="modal-input input-sotial"
               type="text"
               placeholder="Добавьте социальную сеть"
             />
             <img
               class="form-input-image"
-              src="../assets/Icon.png"
+              src="./assets/Icon.png"
               alt="global"
             />
           </div>
 
           <div class="form-input-container_icon">
             <input
-              class="modal-input"
+              class="modal-input input-sotial"
               type="text"
               placeholder="Добавьте социальную сеть"
             />
             <img
               class="form-input-image"
-              src="../assets/Instagram.png"
+              src="./assets/Instagram.png"
               alt="global"
             />
           </div>
           <div class="form-input-container_icon">
             <input
-              class="modal-input"
+              class="modal-input input-sotial"
               type="text"
               placeholder="Добавьте социальную сеть"
             />
             <img
               class="form-input-image"
-              src="../assets/youtube 2.png"
+              src="./assets/youtube 2.png"
               alt="global"
             />
           </div>
-          <div class="form-input-container_icon">
+          <div class="form-input-container_icon input-employer-containet">
+            <label class="form-input-label" for="employer">Руководитель </label>
             <input
+              id="employer"
               class="modal-input"
               type="text"
-              placeholder="Добавьте социальную сеть"
+              placeholder="Добавьте  ФИО руководителя"
             />
           </div>
           <button type="submit" class="modal-button">
@@ -173,7 +197,7 @@
         </form>
       </div>
     </div>
-
+    <script src="https://unpkg.com/imask"></script>
     <script src="script.js"></script>
   </body>
 </html>
