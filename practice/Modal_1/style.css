@@ -269,6 +269,6 @@ select {
   flex-direction: column;
   align-items: flex-start;
 }
-.paretn-invalid {
+.parent-invalid {
   border: 1px solid red;
 }
